@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:backgroundTint="@color/cardview_dark_background"
+    android:background="@color/cardview_light_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:hint="Text To Hide"
+        android:gravity="center"
+        android:textColorHint="@color/teal_700"
+        android:layout_centerInParent="true"
+        app:cornerRadius="20dp"
+        android:textAlignment="center">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/main_EDT_textToHide"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:textSize="30dp"
+        android:background="#EBE7EAF3"
+        android:textColor="@color/teal_700"/>
+    </com.google.android.material.textfield.TextInputLayout>
+<TextView
+    android:id="@+id/main_TXT_encodeText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Hide Text: "
+    android:textAlignment="center"
+    android:textColor="#EBE7EAF3"
+    android:textSize="20dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50px"/>
+        <TextView
+            android:id="@+id/main_TXT_decryptedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Original Text:"
+            android:textAlignment="center"
+            android:textColor="#EBE7EAF3"
+            android:textSize="20dp"/>
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="50px"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_BTN_hideText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encode"
+            android:backgroundTint="#EB7895ED" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_BTN_copyToClipBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy the hidden text"
+            android:backgroundTint="#EB7895ED" />
+    </LinearLayout>
+
+</RelativeLayout>
